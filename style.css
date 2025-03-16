@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.hero-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+header p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+#tweet-container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+}
+button {
+    background-color: #f0c330;
+    color: #000;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #e0b020;
+}
+footer {
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+footer a {
+    color: #1DA1F2;
+    text-decoration: none;
+}
