@@ -48,3 +48,19 @@ footer a {
     color: #1DA1F2;
     text-decoration: none;
 }
+.ye-button {
+    background-image: url('https://raw.githubusercontent.com/Talittubbie/Yehoova-site/main/images/ye_cartoon_head.png') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: block;
+}
+
+.ye-button:hover {
+    transform: scale(1.1);
+}
