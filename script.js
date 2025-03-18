@@ -17,4 +17,4 @@ document.getElementById('generate-btn').onclick = () => {
     tweetEl.innerText = newTweet;
 };
 console.log("Script.js körs automatiskt!");
-alert("Script.js fungerar!");
+
