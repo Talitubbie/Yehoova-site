@@ -5,7 +5,7 @@ const tweets = [
     "The world needs more visionaries.",
     "I AM YEHOOVA.",
 ];
-const audioClips = ["audio/ye1.mp3", "audio/ye2.mp3", "audio/ye3.mp3"];
+const audioClips = ["ye1.mp3", "ye2.mp3", "ye3.mp3"];
 
 const tweetEl = document.getElementById('tweet-text');
 const audioEl = document.getElementById('kanyeAudio');
