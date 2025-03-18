@@ -1,71 +1,55 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ye-nerator</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .yenerator-text {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .ye-button {
+            background: url('ye_cartoon_head.png') no-repeat center center;
+            background-size: cover;
+            width: 150px;
+            height: 150px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .ye-button:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Ye-nerator&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #000;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.yenerator-text {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-size: 2em;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ye-button {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: url('ye_cartoon_head.png') no-repeat center center;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-size: cover;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 150px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 150px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 50%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.ye-button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(1.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="yenerator-text"&gt;Ye-nerator&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="ye-button" onclick="playYeAudio()"&gt;&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;audio id="ye-audio" src="ye-sound.mp3"&gt;&lt;/audio&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function playYeAudio() {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>var audio = document.getElementById("ye-audio");</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (audio.paused) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>audio.play();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>audio.currentTime = 0;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>audio.play();</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <div class="container">
+        <div class="yenerator-text">Ye-nerator</div>
+        <button class="ye-button" onclick="playYeAudio()"></button>
+        <audio id="ye-audio" src="ye-sound.mp3"></audio>
+    </div>
+
+    <script>
+        function playYeAudio() {
+            var audio = document.getElementById("ye-audio");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.currentTime = 0;
+                audio.play();
+            }
+        }
+    </script>
 </body>
 </html>
