@@ -16,3 +16,5 @@ document.getElementById('generate-btn').onclick = () => {
     audioEl.play();
     tweetEl.innerText = newTweet;
 };
+console.log("Script.js körs automatiskt!");
+alert("Script.js fungerar!");
