@@ -3,76 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ye-nerator</title>
+  <title>HOOVA - Celebration Token</title>
   <style>
-    /* ----- Grundläggande styling ----- */
     body {
       margin: 0;
-      padding: 0;
-      background-color: #000;
-      color: #fff;
       font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       text-align: center;
     }
-
-    /* ----- Container för innehåll ----- */
-    .container {
-      margin-top: 50px;
-    }
-
-    /* ----- Rubrik/text ----- */
-    .yenerator-text {
-      font-size: 2em;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-
-    /* ----- Knapp (Ye-nerator) ----- */
-    .ye-button {
-      /* Här använder vi en direktlänk till bilden på GitHub */
-      background: url('https://raw.githubusercontent.com/Talittubbie/Yehoova-site/main/images/ye_cartoon_head.png')
-                 no-repeat center center;
+    .meme-section {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background-image: url('https://via.placeholder.com/1024x300'); /* Replace with your meme image */
       background-size: cover;
-      width: 150px;
-      height: 150px;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
-      display: inline-block; 
-      /* Om du vill ha en liten text inuti knappen, ta bort text-indent */
-      text-indent: -9999px; 
+      background-position: center;
     }
-
-    /* ----- Hover-effekt på knappen ----- */
-    .ye-button:hover {
-      transform: scale(1.1);
+    .meme-section .ticker {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 48px;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+    .content {
+      padding: 20px;
+    }
+    .description {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+    .tweet-generator {
+      margin-top: 40px;
+    }
+    .tweet-generator textarea {
+      width: 80%;
+      height: 100px;
+      padding: 10px;
+      font-size: 16px;
+      resize: none;
+    }
+    .tweet-generator button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .tweet-preview {
+      margin: 20px auto;
+      background: #fff;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 80%;
+      text-align: left;
     }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="yenerator-text">Ye-nerator</div>
-    <!-- Knappen som spelar upp ljud -->
-    <button class="ye-button" onclick="playYeAudio()"></button>
+  <!-- Meme section with ticker -->
+  <div class="meme-section">
+    <div class="ticker">HOOVA</div>
+  </div>
 
-    <!-- Ljudfil -->
-    <!-- Byt ut URL nedan om du vill använda en annan MP3-länk eller en lokal fil -->
-    <audio id="ye-audio" src="https://raw.githubusercontent.com/Talittubbie/Yehoova-site/main/ye1.mp3"></audio>
+  <div class="content">
+    <!-- Updated Description -->
+    <div class="description">Celebration Token To The King Of Tweets - God Of Controversy</div>
+
+    <!-- Tweet generator -->
+    <div class="tweet-generator">
+      <h3>Tweet Generator</h3>
+      <textarea id="tweetInput" placeholder="Write your tweet here..."></textarea><br>
+      <button onclick="generateTweet()">Generate Tweet</button>
+      <div id="tweetPreview" class="tweet-preview"></div>
+    </div>
   </div>
 
   <script>
-    function playYeAudio() {
-      // Hitta ljud-elementet
-      var audio = document.getElementById("ye-audio");
-      // Om ljudet är pausat, spela
-      if (audio.paused) {
-        audio.play();
-      } else {
-        // Om ljudet redan spelas, spola tillbaka och spela igen
-        audio.currentTime = 0;
-        audio.play();
-      }
+    function generateTweet() {
+      const tweet = document.getElementById('tweetInput').value;
+      document.getElementById('tweetPreview').innerText = tweet;
     }
   </script>
 </body>
